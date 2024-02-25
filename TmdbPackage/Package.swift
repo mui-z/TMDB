@@ -10,7 +10,8 @@ let package = Package(
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
       name: "TmdbPackage",
-      targets: ["TmdbPackage"]),
+      targets: ["TmdbPackage"]
+    ),
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -32,9 +33,11 @@ let package = Package(
           name: "Logging",
           package: "swift-log"
         ),
-      ]    ),
+      ]
+    ),
     .testTarget(
       name: "TmdbPackageTests",
-      dependencies: ["TmdbPackage"]),
+      dependencies: ["TmdbPackage"]
+    ),
   ]
 )

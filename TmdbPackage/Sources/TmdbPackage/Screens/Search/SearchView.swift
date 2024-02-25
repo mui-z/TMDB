@@ -1,11 +1,11 @@
-import SwiftUI
 import ComposableArchitecture
+import SwiftUI
 
 struct SearchView: View {
   @ObservedObject var viewStore: ViewStoreOf<SearchReducer>
 
   init(store: StoreOf<SearchReducer>) {
-    self.viewStore = ViewStoreOf<SearchReducer>(store, observe: { $0 })
+    viewStore = ViewStoreOf<SearchReducer>(store, observe: { $0 })
   }
 
   var body: some View {
@@ -13,17 +13,17 @@ struct SearchView: View {
       Text(viewStore.count.description)
       HStack {
         Button(action: {
-            viewStore.send(.decrement)
+          viewStore.send(.decrement)
         }, label: {
-            Text("-")
+          Text("-")
         })
         Button(action: {
-            viewStore.send(.increment)
+          viewStore.send(.increment)
         }, label: {
-            Text("+")
+          Text("+")
         })
       }
     }
+    .navigationTitle("Search")
   }
 }
-

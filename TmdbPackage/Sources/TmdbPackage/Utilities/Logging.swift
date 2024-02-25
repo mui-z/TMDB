@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  Logging.swift
+//
 //
 //  Created by osushi on 2024/02/25.
 //

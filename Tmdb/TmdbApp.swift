@@ -12,7 +12,7 @@ import TmdbPackage
 struct TmdbApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      RootView()
     }
   }
 }

@@ -22,11 +22,11 @@ struct MainTabView: View {
       }
 
       NavigationStack {
-        SearchView(store: store.scope(state: \.settings, action: \.settings))
+        SearchView(store: store.scope(state: \.search, action: \.search))
       }
       .tag(MainTabReducer.Tab.search)
       .tabItem {
-        Image(systemName: "gearshape")
+        Image(systemName: "magnifyingglass")
       }
     }
   }
