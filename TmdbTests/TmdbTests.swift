@@ -1,14 +1,14 @@
 //
-//  SpmSwiftUITemplateTests.swift
-//  SpmSwiftUITemplateTests
+//  TmdbTests.swift
+//  TmdbTests
 //
 //  Created by osushi on 2022/03/05.
 //
 
 import XCTest
-@testable import SpmSwiftUITemplate
+@testable import Tmdb
 
-class SpmSwiftUITemplateTests: XCTestCase {
+class TmdbTests: XCTestCase {
   
   override func setUpWithError() throws {
     // Put setup code here. This method is called before the invocation of each test method in the class.

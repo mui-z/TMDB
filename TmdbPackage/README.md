@@ -1,3 +1,3 @@
-# SpmSwiftUITemplatePackage
+# TmdbPackage
 
 A description of this package.

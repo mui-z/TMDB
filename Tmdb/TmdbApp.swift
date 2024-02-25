@@ -1,15 +1,15 @@
 //
-//  SpmSwiftUITemplateApp.swift
-//  SpmSwiftUITemplate
+//  TmdbApp.swift
+//  Tmdb
 //
 //  Created by osushi on 2022/03/05.
 //
 
 import SwiftUI
-import SpmSwiftUITemplatePackage
+import TmdbPackage
 
 @main
-struct SpmSwiftUITemplateApp: App {
+struct TmdbApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()

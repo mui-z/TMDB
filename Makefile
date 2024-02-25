@@ -1,4 +1,11 @@
 .PHONY: template
 
+open:
+	open Tmdb.xcworkspace	
+
+
 template:
-	genesis generate templates/template.yml -d SpmSwiftUITemplatePackage/Sources/SpmSwiftUITemplatePackage/
+	genesis generate templates/template.yml -d TmdbPackage/Sources/TmdbPackage/
+
+format:
+	swiftformat .
