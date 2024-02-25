@@ -1,11 +1,11 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct {{ name }}View: View {
-  @ObservedObject var viewStore: ViewStoreOf<{{ name }}Reducer>
+struct SearchView: View {
+  @ObservedObject var viewStore: ViewStoreOf<SearchReducer>
 
-  init(store: StoreOf<{{ name }}Reducer>) {
-    self.viewStore = ViewStoreOf<{{ name }}Reducer>(store, observe: { $0 })
+  init(store: StoreOf<SearchReducer>) {
+    self.viewStore = ViewStoreOf<SearchReducer>(store, observe: { $0 })
   }
 
   var body: some View {
